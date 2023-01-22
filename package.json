@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "start": "concurrently \"npm run start:css\" \"react-scripts start\"",
+    "start:css": "npx tailwindcss -i ./main.css -o ./output.css --watch",
+    "build": "npm run build:css && react-scripts build",
+    "build:css": "NODE_ENV=production tailwindcss -o src/tailwind.css -m"
+  },
   "devDependencies": {
     "tailwindcss": "^3.2.4"
   }
