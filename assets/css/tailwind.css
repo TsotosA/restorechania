@@ -1555,6 +1555,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(205 206 214 / var(--tw-text-opacity));
 }
 
+.text-gold{
+  --tw-text-opacity: 1;
+  color: rgb(211 164 100 / var(--tw-text-opacity));
+}
+
 .text-\[\#e4e4e4\]{
   --tw-text-opacity: 1;
   color: rgb(228 228 228 / var(--tw-text-opacity));

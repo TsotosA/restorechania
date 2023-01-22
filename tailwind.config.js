@@ -30,6 +30,7 @@ module.exports = {
         primary: "#224d62",
         secondary: "#13C296",
         "body-color": "#637381",
+        gold:'#d3a464',
         warning: "#FBBF24",
       },
       boxShadow: {
