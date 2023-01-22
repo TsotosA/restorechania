@@ -1,10 +1,17 @@
 {
+  "name": "restorechania",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
   "scripts": {
-    "start": "concurrently \"npm run start:css\" \"react-scripts start\"",
-    "start:css": "npx tailwindcss -i ./main.css -o ./output.css --watch",
-    "build:css": "NODE_ENV=production tailwindcss -o src/tailwind.css -m"
+    "build-css": "tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind.css -w"
   },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
-    "tailwindcss": "^3.2.4"
+    "prettier": "^2.6.2",
+    "prettier-plugin-tailwindcss": "^0.1.9",
+    "tailwindcss": "^3.0.15"
   }
 }
