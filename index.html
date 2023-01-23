@@ -17,6 +17,7 @@
 
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       new WOW().init();
     </script>
@@ -60,6 +61,7 @@
                 <ul class="blcok lg:flex">
                   <li class="group relative">
                     <a
+                      id="homeTitle"
                       href="#home"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
@@ -68,18 +70,20 @@
                   </li>
                   <li class="group relative">
                     <a
-                      href="#about"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
-                    >
-                      Σχετικά
-                    </a>
-                  </li>
-                  <li class="group relative">
-                    <a
+                      id="servicesTitle"
                       href="#services"
                       class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Υπηρεσίες
+                    </a>
+                  </li>
+                  <li class="group relative">
+                    <a
+                      id="aboutTitle"
+                      href="#about"
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
+                    >
+                      Σχετικά
                     </a>
                   </li>
                   <!-- <li class="group relative">
@@ -184,12 +188,16 @@
             <div class="justify-end pr-16 sm:flex lg:pr-0">
             
               <img
+              onclick="setLanguage('gr')"
+              id="gr-flag"
               src="assets/images/lang/Flag_of_Greece.svg"
               alt="image"
               class=" mx-1 w-4 opacity-70 transition duration-300 ease-in-out hover:opacity-100 cursor-pointer"
             />
   
             <img
+            onclick="setLanguage('en')"
+            id="en-flag"
             src="assets/images/lang/united_kingdom.png"
             alt="image"
             class=" mx-1 w-4 opacity-70 transition duration-300 ease-in-out hover:opacity-100 cursor-pointer"
@@ -1425,6 +1433,69 @@
     </div>
     <!-- ====== Hero Section End -->
 
+
+    <!-- ====== About Section Start -->
+    <section
+      id="about"
+      class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]"
+    >
+      <div class="container">
+        <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4">
+              <div
+                class="items-center justify-between overflow-hidden border lg:flex"
+              >
+                <div
+                  class="w-full py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]"
+                >
+                  <span
+                    class="mb-5 inline-block bg-primary py-2 px-5 text-sm font-medium text-white"
+                  >
+                    Σχετικα με εμας
+                  </span>
+                  <h2
+                    class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]"
+                  >
+                  Η Εταιρεία µας
+                  </h2>
+                  <p class="mb-9 text-base leading-relaxed text-body-color">
+                                          Στη Restore παρέχουµε όλες τις βασικές υπηρεσίες
+                      τεχνικής υποστήριξης που στοχεύουν στη βέλτιστη
+                      συντήρηση του καταλύµατος σας. Μέσα από
+                      εξατοµικευµένα πακέτα υπηρεσιών, βρίσκουµε µαζί
+                      την πιο άρτια τεχνικά λύση µε βάση τις ανάγκες του
+                      ακινήτου και τον προϋπολογισµό σας.
+                      Το προσωπικό της Restore, µέσα από πολυετή
+                      εµπειρία στη συντήρηση πολυτελών καταλυµάτων,
+                      εγγυάται την ολοκλήρωση των εργασιών εντός των
+                      χρονικών ορίων, χωρίς κρυφά κόστη και µισές
+                      δουλειές
+                  </p>
+                  <!-- <a
+                    href="javascript:void(0)"
+                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
+                  >
+                    Learn More
+                  </a> -->
+                </div>
+                <div class="text-center">
+                  <div class="relative z-10 inline-block">
+                    <img
+                      src="assets/images/about/about-image.svg"
+                      alt="image"
+                      class="mx-auto lg:ml-auto"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====== About Section End -->
+
     <!-- ====== Features Section Start -->
     <section id="services" class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px]">
       <div class="container">
@@ -1476,12 +1547,12 @@
               <p class="mb-8 text-body-color lg:mb-11">
                 µε την εγγύηση της πιστοποίησης 2022/PSP0005
               </p>
-              <a
+              <!-- <a
                 href="javascript:void(0)"
                 class="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
@@ -1514,12 +1585,12 @@
               <p class="mb-8 text-body-color lg:mb-11">
                 Συντήρηση & επισκευή ηλεκτρολογικών εγκαταστάσεων
               </p>
-              <a
+              <!-- <a
                 href="javascript:void(0)"
                 class="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
@@ -1561,12 +1632,12 @@
               <p class="mb-8 text-body-color lg:mb-11">
                 Συντήρηση & επισκευή υδραυλικών εγκαταστάσεων
               </p>
-              <a
+              <!-- <a
                 href="javascript:void(0)"
                 class="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
@@ -1600,78 +1671,18 @@
                 Συνολική προετοιµασία του καταλύµατος για την έναρξη της σεζόν. Συντήρηση & επίβλεψη κατά τους
                 χειµερινούς µήνες.
               </p>
-              <a
+              <!-- <a
                 href="javascript:void(0)"
                 class="text-base font-medium text-body-color hover:text-primary"
               >
                 Learn More
-              </a>
+              </a> -->
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- ====== Features Section End -->
-
-    <!-- ====== About Section Start -->
-    <section
-      id="about"
-      class="bg-[#f3f4fe] pt-20 pb-20 lg:pt-[120px] lg:pb-[120px]"
-    >
-      <div class="container">
-        <div class="wow fadeInUp bg-white" data-wow-delay=".2s">
-          <div class="-mx-4 flex flex-wrap">
-            <div class="w-full px-4">
-              <div
-                class="items-center justify-between overflow-hidden border lg:flex"
-              >
-                <div
-                  class="w-full py-12 px-7 sm:px-12 md:p-16 lg:max-w-[565px] lg:py-9 lg:px-16 xl:max-w-[640px] xl:p-[70px]"
-                >
-                  <span
-                    class="mb-5 inline-block bg-primary py-2 px-5 text-sm font-medium text-white"
-                  >
-                    About Us
-                  </span>
-                  <h2
-                    class="mb-6 text-3xl font-bold text-dark sm:text-4xl sm:leading-snug 2xl:text-[40px]"
-                  >
-                    Brilliant Toolkit to Build Nextgen Website Faster.
-                  </h2>
-                  <p class="mb-9 text-base leading-relaxed text-body-color">
-                    The main ‘thrust' is to focus on educating attendees on how
-                    to best protect highly vulnerable business applications with
-                    interactive panel discussions and roundtables led by subject
-                    matter experts.
-                  </p>
-                  <p class="mb-9 text-base leading-relaxed text-body-color">
-                    The main ‘thrust' is to focus on educating attendees on how
-                    to best protect highly vulnerable business applications with
-                    interactive panel.
-                  </p>
-                  <a
-                    href="javascript:void(0)"
-                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-90 hover:shadow-lg"
-                  >
-                    Learn More
-                  </a>
-                </div>
-                <div class="text-center">
-                  <div class="relative z-10 inline-block">
-                    <img
-                      src="assets/images/about/about-image.svg"
-                      alt="image"
-                      class="mx-auto lg:ml-auto"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ====== About Section End -->
 
     <!-- ====== Pricing Section Start -->
     <!-- <section
@@ -2168,7 +2179,7 @@
     <!-- ====== Faq Section End -->
 
     <!-- ====== Testimonials Start ====== -->
-    <section id="testimonials" class="pt-20 md:pt-[120px]">
+    <!-- <section id="testimonials" class="pt-20 md:pt-[120px]">
       <div class="container px-4">
         <div class="flex flex-wrap">
           <div class="mx-4 w-full">
@@ -2546,11 +2557,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ====== Testimonials End ====== -->
 
     <!-- ====== Team Section Start -->
-    <section id="team" class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
+    <!-- <section id="team" class="pt-20 pb-10 lg:pt-[120px] lg:pb-20">
       <div class="container">
         <div class="-mx-4 flex flex-wrap">
           <div class="w-full px-4">
@@ -4534,7 +4545,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- ====== Team Section End -->
 
     <!-- ====== Contact Start ====== -->
@@ -5342,6 +5353,42 @@
       }
 
       window.document.addEventListener("scroll", onScroll);
+
+
+      
+
+      // multilanguage
+
+      var language;
+      function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('gr') : false;
+        $.ajax({
+          url: 'assets/language/' + localStorage.getItem('language') + '.json',
+          dataType: 'json', async: false, dataType: 'json',
+          success: function (lang) { language = lang },
+        });
+      }
+
+      getLanguage();
+
+      function setLanguage(lang) {
+        console.log(`setLanguage(${lang})`);
+        localStorage.setItem('language', lang);
+        getLanguage();
+        setLangTexts();
+      }
+      
+      function setLangTexts(){
+        $('#homeTitle').text(language.menu.homeTitle);
+        $('#aboutTitle').text(language.menu.aboutTitle);
+        $('#servicesTitle').text(language.menu.servicesTitle);
+      }
+
+      (function() {
+        console.log(language);
+        setLangTexts();
+      })();
+
     </script>
   </body>
 </html>
