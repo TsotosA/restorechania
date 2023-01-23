@@ -1,0 +1,7 @@
+- header logo x1.5
+- hero picture centered
+- Υπηρεσιες -> οι υπηρεσιες μας
+- remove -> There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.
+- google analytics
+- finigh social media on header
+- remove footer?
