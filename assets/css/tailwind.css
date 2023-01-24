@@ -478,6 +478,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 16px;
 }
 
+@media (min-width: 375px){
+  .container{
+    max-width: 375px;
+  }
+}
+
 @media (min-width: 540px){
   .container{
     max-width: 540px;
@@ -617,10 +623,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
-.m-3{
-  margin: 0.75rem;
-}
-
 .m-1{
   margin: 0.25rem;
 }
@@ -658,11 +660,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mx-3{
   margin-left: -0.75rem;
   margin-right: -0.75rem;
-}
-
-.mx-1{
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 
 .-mx-2{
@@ -876,10 +873,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[330px\]{
   width: 330px;
-}
-
-.w-4{
-  width: 1rem;
 }
 
 .w-\[70px\]{
@@ -1246,10 +1239,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
 .px-4{
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1596,10 +1585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(172 182 190 / var(--tw-placeholder-opacity));
 }
 
-.opacity-70{
-  opacity: 0.7;
-}
-
 .opacity-50{
   opacity: 0.5;
 }
@@ -1636,22 +1621,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ring-primary{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(34 77 98 / var(--tw-ring-opacity));
-}
-
-.blur-sm{
-  --tw-blur: blur(4px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-xl{
-  --tw-blur: blur(24px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.backdrop-blur-sm{
-  --tw-backdrop-blur: blur(4px);
-  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
-          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-\[top\]{
@@ -1942,6 +1911,12 @@ body {
 
 .group:hover .group-hover\:opacity-100{
   opacity: 1;
+}
+
+@media (min-width: 375px){
+  .xs\:flex{
+    display: flex;
+  }
 }
 
 @media (min-width: 540px){
