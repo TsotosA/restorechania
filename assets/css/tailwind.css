@@ -617,6 +617,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
+.m-5{
+  margin: 1.25rem;
+}
+
+.m-4{
+  margin: 1rem;
+}
+
 .-mx-4{
   margin-left: -1rem;
   margin-right: -1rem;
@@ -655,11 +663,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mx-1{
   margin-left: 0.25rem;
   margin-right: 0.25rem;
-}
-
-.mx-4{
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 .-mx-2{
@@ -759,18 +762,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.75rem;
 }
 
-.mr-1{
-  margin-right: 0.25rem;
-}
-
-.ml-4{
-  margin-left: 1rem;
-}
-
-.mr-10{
-  margin-right: 2.5rem;
-}
-
 .block{
   display: block;
 }
@@ -843,10 +834,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3.5rem;
 }
 
-.h-\[1px\]{
-  height: 1px;
-}
-
 .h-11{
   height: 2.75rem;
 }
@@ -903,10 +890,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 3.5rem;
 }
 
-.w-\[50px\]{
-  width: 50px;
-}
-
 .max-w-full{
   max-width: 100%;
 }
@@ -953,10 +936,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[40px\]{
   max-width: 40px;
-}
-
-.max-w-\[140px\]{
-  max-width: 140px;
 }
 
 .max-w-\[525px\]{
@@ -1115,6 +1094,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
 }
 
+.border-\[\#F3F4FE\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 254 / var(--tw-border-opacity));
+}
+
 .border-primary{
   --tw-border-opacity: 1;
   border-color: rgb(34 77 98 / var(--tw-border-opacity));
@@ -1123,11 +1107,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-\[\#D4DEFF\]{
   --tw-border-opacity: 1;
   border-color: rgb(212 222 255 / var(--tw-border-opacity));
-}
-
-.border-\[\#F3F4FE\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(243 244 254 / var(--tw-border-opacity));
 }
 
 .border-opacity-40{
@@ -1172,19 +1151,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(19 194 150 / var(--tw-bg-opacity));
 }
 
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#f3f4ff\]{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#afb2b5\]{
+.bg-secondary{
   --tw-bg-opacity: 1;
-  background-color: rgb(175 178 181 / var(--tw-bg-opacity));
+  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F4F7FF\]{
@@ -1268,8 +1242,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
-.p-8{
-  padding: 2rem;
+.p-6{
+  padding: 1.5rem;
+}
+
+.p-11{
+  padding: 2.75rem;
 }
 
 .px-4{
@@ -1529,10 +1507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 26px;
 }
 
-.tracking-wide{
-  letter-spacing: 0.025em;
-}
-
 .text-dark{
   --tw-text-opacity: 1;
   color: rgb(9 14 52 / var(--tw-text-opacity));
@@ -1585,16 +1559,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(33 43 54 / var(--tw-text-opacity));
-}
-
-.text-\[\#fbb040\]{
-  --tw-text-opacity: 1;
-  color: rgb(251 176 64 / var(--tw-text-opacity));
-}
-
-.text-\[\#969696\]{
-  --tw-text-opacity: 1;
-  color: rgb(150 150 150 / var(--tw-text-opacity));
 }
 
 .text-\[\#adadad\]{
@@ -1672,11 +1636,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ring-primary{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(34 77 98 / var(--tw-ring-opacity));
-}
-
-.grayscale{
-  --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition-\[top\]{
@@ -1917,10 +1876,6 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:filter-none:hover{
-  filter: none;
-}
-
 .focus\:border-white:focus{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -2116,10 +2071,6 @@ body {
 
   .md\:pt-\[130px\]{
     padding-top: 130px;
-  }
-
-  .md\:pt-\[120px\]{
-    padding-top: 120px;
   }
 
   .md\:text-2xl{
