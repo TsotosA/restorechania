@@ -478,9 +478,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 16px;
 }
 
-@media (min-width: 375px){
+@media (min-width: 300px){
   .container{
-    max-width: 375px;
+    max-width: 300px;
   }
 }
 
@@ -1913,7 +1913,7 @@ body {
   opacity: 1;
 }
 
-@media (min-width: 375px){
+@media (min-width: 300px){
   .xs\:flex{
     display: flex;
   }
