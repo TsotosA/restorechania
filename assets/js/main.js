@@ -30,6 +30,23 @@
     } else {
       backToTop.style.display = "none";
     }
+
+
+        // show or hide the social icons
+        const socialInsta = document.querySelector("#social-insta");
+        const socialFb = document.querySelector("#social-fb");
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          socialInsta.classList.add("hidden");
+          socialFb.classList.add("hidden");
+        } else {
+          socialInsta.classList.remove("hidden");
+          socialFb.classList.remove("hidden");
+        }
+
+
   };
 
   // ===== responsive navbar
