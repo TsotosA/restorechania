@@ -617,12 +617,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 20;
 }
 
-.m-5{
-  margin: 1.25rem;
+.m-3{
+  margin: 0.75rem;
 }
 
-.m-4{
-  margin: 1rem;
+.m-1{
+  margin: 0.25rem;
 }
 
 .-mx-4{
@@ -1238,16 +1238,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1rem;
 }
 
+.p-11{
+  padding: 2.75rem;
+}
+
 .p-5{
   padding: 1.25rem;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
-.p-11{
-  padding: 2.75rem;
+.p-3{
+  padding: 0.75rem;
 }
 
 .px-4{
@@ -1636,6 +1636,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 .ring-primary{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(34 77 98 / var(--tw-ring-opacity));
+}
+
+.blur-sm{
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur-xl{
+  --tw-blur: blur(24px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur-sm{
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-\[top\]{
