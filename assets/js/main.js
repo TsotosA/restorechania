@@ -36,8 +36,8 @@
     const socialInsta = document.querySelector("#social-insta");
     const socialFb = document.querySelector("#social-fb");
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > 2 ||
+      document.documentElement.scrollTop > 2
     ) {
       socialInsta.classList.add("hidden");
       socialFb.classList.add("hidden");
@@ -50,8 +50,8 @@
     const langGr = document.querySelector("#lang-gr");
     const langEn = document.querySelector("#lang-en");
     if (
-      document.body.scrollTop > 50 ||
-      document.documentElement.scrollTop > 50
+      document.body.scrollTop > 2 ||
+      document.documentElement.scrollTop > 2
     ) {
       langGr.classList.add("hidden");
       langEn.classList.add("hidden");
