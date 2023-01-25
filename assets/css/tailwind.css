@@ -1003,18 +1003,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.justify-items-end{
-  justify-items: end;
-}
-
-.justify-items-center{
-  justify-items: center;
-}
-
-.justify-self-end{
-  justify-self: end;
-}
-
 .overflow-hidden{
   overflow: hidden;
 }
@@ -1419,10 +1407,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-16{
   padding-top: 4rem;
-}
-
-.pr-14{
-  padding-right: 3.5rem;
 }
 
 .text-left{
