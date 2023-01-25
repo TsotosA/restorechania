@@ -32,33 +32,33 @@
     }
 
 
-        // show or hide the social icons
-        const socialInsta = document.querySelector("#social-insta");
-        const socialFb = document.querySelector("#social-fb");
-        if (
-          document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50
-        ) {
-          socialInsta.classList.add("hidden");
-          socialFb.classList.add("hidden");
-        } else {
-          socialInsta.classList.remove("hidden");
-          socialFb.classList.remove("hidden");
-        }
+    // show or hide the social icons
+    const socialInsta = document.querySelector("#social-insta");
+    const socialFb = document.querySelector("#social-fb");
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      socialInsta.classList.add("hidden");
+      socialFb.classList.add("hidden");
+    } else {
+      socialInsta.classList.remove("hidden");
+      socialFb.classList.remove("hidden");
+    }
 
-                // show or hide lang icons
-                const langGr = document.querySelector("#lang-gr");
-                const langEn = document.querySelector("#lang-en");
-                if (
-                  document.body.scrollTop > 50 ||
-                  document.documentElement.scrollTop > 50
-                ) {
-                  langGr.classList.add("hidden");
-                  langEn.classList.add("hidden");
-                } else {
-                  langGr.classList.remove("hidden");
-                  langEn.classList.remove("hidden");
-                }
+    // show or hide lang icons
+    const langGr = document.querySelector("#lang-gr");
+    const langEn = document.querySelector("#lang-en");
+    if (
+      document.body.scrollTop > 50 ||
+      document.documentElement.scrollTop > 50
+    ) {
+      langGr.classList.add("hidden");
+      langEn.classList.add("hidden");
+    } else {
+      langGr.classList.remove("hidden");
+      langEn.classList.remove("hidden");
+    }
 
 
   };
