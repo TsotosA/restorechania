@@ -847,6 +847,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 250;
 }
 
+.h-\[350\]{
+  height: 350;
+}
+
+.h-\[350px\]{
+  height: 350px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -905,6 +913,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[250\]{
   width: 250;
+}
+
+.w-7{
+  width: 1.75rem;
 }
 
 .max-w-full{
@@ -969,6 +981,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-\[350px\]{
   max-width: 350px;
+}
+
+.max-w-xl{
+  max-width: 36rem;
+}
+
+.max-w-xs{
+  max-width: 20rem;
+}
+
+.max-w-\[200\]{
+  max-width: 200;
+}
+
+.max-w-min{
+  max-width: -webkit-min-content;
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .-translate-y-1\/2{
@@ -1970,6 +2004,12 @@ body {
   .xs\:w-40{
     width: 10rem;
   }
+
+  .xs\:max-w-max{
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
 }
 
 @media (min-width: 540px){
@@ -1991,6 +2031,20 @@ body {
 
   .sm\:w-40{
     width: 10rem;
+  }
+
+  .sm\:max-w-none{
+    max-width: none;
+  }
+
+  .sm\:max-w-md{
+    max-width: 28rem;
+  }
+
+  .sm\:max-w-max{
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
   }
 
   .sm\:p-8{
@@ -2083,6 +2137,18 @@ body {
     height: 400px;
   }
 
+  .md\:h-20{
+    height: 5rem;
+  }
+
+  .md\:h-\[350px\]{
+    height: 350px;
+  }
+
+  .md\:h-\[350\]{
+    height: 350;
+  }
+
   .md\:w-1\/2{
     width: 50%;
   }
@@ -2117,6 +2183,10 @@ body {
 
   .md\:w-11{
     width: 2.75rem;
+  }
+
+  .md\:max-w-\[350px\]{
+    max-width: 350px;
   }
 
   .md\:justify-start{
@@ -2278,6 +2348,10 @@ body {
     height: 45%;
   }
 
+  .lg\:h-20{
+    height: 5rem;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
@@ -2340,6 +2414,14 @@ body {
 
   .lg\:max-w-\[565px\]{
     max-width: 565px;
+  }
+
+  .lg\:max-w-\[350\]{
+    max-width: 350;
+  }
+
+  .lg\:max-w-\[350px\]{
+    max-width: 350px;
   }
 
   .lg\:border-0{
