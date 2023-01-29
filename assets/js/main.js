@@ -47,18 +47,18 @@
     }
 
     // show or hide lang icons
-    const langGr = document.querySelector("#lang-gr");
-    const langEn = document.querySelector("#lang-en");
-    if (
-      document.body.scrollTop > 2 ||
-      document.documentElement.scrollTop > 2
-    ) {
-      langGr.classList.add("hidden");
-      langEn.classList.add("hidden");
-    } else {
-      // langGr.classList.remove("hidden");
-      // langEn.classList.remove("hidden");
-    }
+    // const langGr = document.querySelector("#lang-gr");
+    // const langEn = document.querySelector("#lang-en");
+    // if (
+    //   document.body.scrollTop > 2 ||
+    //   document.documentElement.scrollTop > 2
+    // ) {
+    //   langGr.classList.add("hidden");
+    //   langEn.classList.add("hidden");
+    // } else {
+    //   langGr.classList.remove("hidden");
+    //   langEn.classList.remove("hidden");
+    // }
 
 
   };
