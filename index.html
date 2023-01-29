@@ -14,7 +14,6 @@
 
   <!-- ==== WOW JS ==== -->
   <script src="assets/js/wow.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     new WOW().init();
   </script>
@@ -1138,7 +1137,7 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
               <span class="mb-5 text-base font-semibold text-dark">
                 <!-- CONTACT US -->
               </span>
-              <h2 id="contactTitle"  class="text-[35px] font-semibold">
+              <h2 id="contactTitle" class="text-[35px] font-semibold">
                 Επικοινωνήστε Μαζί μας <br />
               </h2>
             </div>
@@ -1584,11 +1583,16 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
     var language;
     function getLanguage() {
       (localStorage.getItem('language') == null) ? setLanguage('gr') : false;
-      $.ajax({
-        url: 'assets/language/' + localStorage.getItem('language') + '.json',
-        dataType: 'json', async: false, dataType: 'json',
-        success: function (lang) { language = lang },
-      });
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          var obj = this.responseText;
+          var obj1 = JSON.parse(obj);
+          language = obj1;
+        }
+      };
+      xhttp.open("GET", 'assets/language/' + localStorage.getItem('language') + '.json', false);
+      xhttp.send();
     }
 
     getLanguage();
@@ -1602,7 +1606,7 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
 
     function findElementByIdAndReplaceText(id, text) {
       try {
-        document.getElementById(id).textContent = text;        
+        document.getElementById(id).textContent = text;
       } catch (error) {
         console.error(`findElementByIdAndReplaceText(${id}, ${text}) \n ${error}`)
       }
