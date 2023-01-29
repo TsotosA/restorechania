@@ -1153,7 +1153,7 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
                   </svg>
                 </div>
                 <div>
-                  <h5 class="text-lg font-semibold">Διευθυνση</h5>
+                  <h5 id="contactLocationTitle" class="text-lg font-semibold">Διευθυνση</h5>
                   <p id="contactLocationContent" class="text-base text-body-color">
                     Χανιά, Χανίων, 73100
                   </p>
@@ -1594,48 +1594,89 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
     getLanguage();
 
     function setLanguage(lang) {
-      console.log(`setLanguage(${lang})`);
+      // console.log(`setLanguage(${lang})`);
       localStorage.setItem('language', lang);
       getLanguage();
       setLangTexts();
     }
 
+    function findElementByIdAndReplaceText(id, text) {
+      try {
+        document.getElementById(id).textContent = text;        
+      } catch (error) {
+        console.error(`findElementByIdAndReplaceText(${id}, ${text}) \n ${error}`)
+      }
+    }
+
     function setLangTexts() {
-      $('#homeTitle').text(language.menu.homeTitle);
-      $('#aboutTitle').text(language.menu.aboutTitle);
-      $('#servicesTitle').text(language.menu.servicesTitle);
-      $('#heroMainTitle').text(language.hero.mainTitle);
-      $('#heroSubTitle').text(language.hero.subTitle);
-      $('#aboutSubTitle').text(language.about.subTitle);
-      $('#aboutMainTitle').text(language.about.mainTitle);
-      $('#aboutMainContentText').text(language.about.mainContentText);
-      $('#servicesMainTitle').text(language.services.mainTitle);
-      $('#servicesSubTitle').text(language.services.subTitle);
-      $('#servicesSlot1Title').text(language.services.slot1Title);
-      $('#servicesSlot1Content').text(language.services.slot1Content);
-      $('#servicesSlot2Title').text(language.services.slot2Title);
-      $('#servicesSlot2Content').text(language.services.slot2Content);
-      $('#servicesSlot3Title').text(language.services.slot3Title);
-      $('#servicesSlot3Content').text(language.services.slot3Content);
-      $('#servicesSlot4Title').text(language.services.slot4Title);
-      $('#servicesSlot4Content').text(language.services.slot4Content);
-      $('#faqSlot1Title').text(language.faq.slot1Title);
-      $('#faqSlot1Content').text(language.faq.slot1Content);
-      $('#faqSlot2Title').text(language.faq.slot2Title);
-      $('#faqSlot2Content').text(language.faq.slot2Content);
-      $('#faqSlot3Title').text(language.faq.slot3Title);
-      $('#faqSlot3Content').text(language.faq.slot3Content);
-      $('#faqSlot4Title').text(language.faq.slot4Title);
-      $('#faqSlot4Content').text(language.faq.slot4Content);
-      $('#contactTitle').text(language.contact.title);
-      $('#contactLocationTitle').text(language.contact.locationTitle);
-      $('#contactLocationContent').text(language.contact.locationContent);
-      $('#contactEmailTitle').text(language.contact.emailTitle);
-      $('#contactEmailContent').text(language.contact.emailContent);
+      // $('#homeTitle').text(language.menu.homeTitle);
+      // $('#aboutTitle').text(language.menu.aboutTitle);
+      // $('#servicesTitle').text(language.menu.servicesTitle);
+      // $('#heroMainTitle').text(language.hero.mainTitle);
+      // $('#heroSubTitle').text(language.hero.subTitle);
+      // $('#aboutSubTitle').text(language.about.subTitle);
+      // $('#aboutMainTitle').text(language.about.mainTitle);
+      // $('#aboutMainContentText').text(language.about.mainContentText);
+      // $('#servicesMainTitle').text(language.services.mainTitle);
+      // $('#servicesSubTitle').text(language.services.subTitle);
+      // $('#servicesSlot1Title').text(language.services.slot1Title);
+      // $('#servicesSlot1Content').text(language.services.slot1Content);
+      // $('#servicesSlot2Title').text(language.services.slot2Title);
+      // $('#servicesSlot2Content').text(language.services.slot2Content);
+      // $('#servicesSlot3Title').text(language.services.slot3Title);
+      // $('#servicesSlot3Content').text(language.services.slot3Content);
+      // $('#servicesSlot4Title').text(language.services.slot4Title);
+      // $('#servicesSlot4Content').text(language.services.slot4Content);
+      // $('#faqSlot1Title').text(language.faq.slot1Title);
+      // $('#faqSlot1Content').text(language.faq.slot1Content);
+      // $('#faqSlot2Title').text(language.faq.slot2Title);
+      // $('#faqSlot2Content').text(language.faq.slot2Content);
+      // $('#faqSlot3Title').text(language.faq.slot3Title);
+      // $('#faqSlot3Content').text(language.faq.slot3Content);
+      // $('#faqSlot4Title').text(language.faq.slot4Title);
+      // $('#faqSlot4Content').text(language.faq.slot4Content);
+      // $('#contactTitle').text(language.contact.title);
+      // $('#contactLocationTitle').text(language.contact.locationTitle);
+      // $('#contactLocationContent').text(language.contact.locationContent);
+      // $('#contactEmailTitle').text(language.contact.emailTitle);
+      // $('#contactEmailContent').text(language.contact.emailContent);
+
+
+      findElementByIdAndReplaceText('homeTitle', language.menu.homeTitle);
+      findElementByIdAndReplaceText('aboutTitle', language.menu.aboutTitle);
+      findElementByIdAndReplaceText('servicesTitle', language.menu.servicesTitle);
+      findElementByIdAndReplaceText('heroMainTitle', language.hero.mainTitle);
+      findElementByIdAndReplaceText('heroSubTitle', language.hero.subTitle);
+      findElementByIdAndReplaceText('aboutSubTitle', language.about.subTitle);
+      findElementByIdAndReplaceText('aboutMainTitle', language.about.mainTitle);
+      findElementByIdAndReplaceText('aboutMainContentText', language.about.mainContentText);
+      findElementByIdAndReplaceText('servicesMainTitle', language.services.mainTitle);
+      findElementByIdAndReplaceText('servicesSubTitle', language.services.subTitle);
+      findElementByIdAndReplaceText('servicesSlot1Title', language.services.slot1Title);
+      findElementByIdAndReplaceText('servicesSlot1Content', language.services.slot1Content);
+      findElementByIdAndReplaceText('servicesSlot2Title', language.services.slot2Title);
+      findElementByIdAndReplaceText('servicesSlot2Content', language.services.slot2Content);
+      findElementByIdAndReplaceText('servicesSlot3Title', language.services.slot3Title);
+      findElementByIdAndReplaceText('servicesSlot3Content', language.services.slot3Content);
+      findElementByIdAndReplaceText('servicesSlot4Title', language.services.slot4Title);
+      findElementByIdAndReplaceText('servicesSlot4Content', language.services.slot4Content);
+      findElementByIdAndReplaceText('faqSlot1Title', language.faq.slot1Title);
+      findElementByIdAndReplaceText('faqSlot1Content', language.faq.slot1Content);
+      findElementByIdAndReplaceText('faqSlot2Title', language.faq.slot2Title);
+      findElementByIdAndReplaceText('faqSlot2Content', language.faq.slot2Content);
+      findElementByIdAndReplaceText('faqSlot3Title', language.faq.slot3Title);
+      findElementByIdAndReplaceText('faqSlot3Content', language.faq.slot3Content);
+      findElementByIdAndReplaceText('faqSlot4Title', language.faq.slot4Title);
+      findElementByIdAndReplaceText('faqSlot4Content', language.faq.slot4Content);
+      findElementByIdAndReplaceText('contactTitle', language.contact.title);
+      findElementByIdAndReplaceText('contactLocationTitle', language.contact.locationTitle);
+      findElementByIdAndReplaceText('contactLocationContent', language.contact.locationContent);
+      findElementByIdAndReplaceText('contactEmailTitle', language.contact.emailTitle);
+      findElementByIdAndReplaceText('contactEmailContent', language.contact.emailContent);
     }
 
     (function () {
-      console.log(language);
+      // console.log(language);
       setLangTexts();
     })();
 
