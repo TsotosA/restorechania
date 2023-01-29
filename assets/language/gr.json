@@ -37,11 +37,11 @@
         "slot4Content": "Το προσωπικό της Restore εξειδικευεται στις συγκεκριμένες υπηρεσίες, όμως μέσω εξωτερικών συνεργατών μπορούμε να σας προτείνουμε και υπηρεσίες ψυκτικών εγκαταστάσεων και φροντίδας κήπου."
     },
     "contact" : {
-        "title" :"",
+        "title" :"Επικοινωνήστε μαζι μας",
         "subTitle": "",
-        "locationTitle": "",
-        "locationContent": "",
-        "emailTitle": "",
-        "emailContent": ""
+        "locationTitle": "Διευθυνση",
+        "locationContent": "Χανια, Χανιων, 73100",
+        "emailTitle": "EMail",
+        "emailContent": "info@restorechania.com"
     }
 }
