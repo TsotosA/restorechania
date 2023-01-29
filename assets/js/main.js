@@ -56,8 +56,8 @@
       langGr.classList.add("hidden");
       langEn.classList.add("hidden");
     } else {
-      langGr.classList.remove("hidden");
-      langEn.classList.remove("hidden");
+      // langGr.classList.remove("hidden");
+      // langEn.classList.remove("hidden");
     }
 
 
