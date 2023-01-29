@@ -184,21 +184,27 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
               class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6">
               <ul class="blcok lg:flex">
                 <li class="group relative">
-                  <a id="homeTitle" href="#home"
+                  <a id="menuHome" href="#home"
                     class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70">
                     Αρχική
                   </a>
                 </li>
                 <li class="group relative">
-                  <a id="aboutTitle" href="#about"
+                  <a id="menuAbout" href="#about"
                     class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12">
                     Σχετικά
                   </a>
                 </li>
                 <li class="group relative">
-                  <a id="servicesTitle" href="#services"
+                  <a id="menuServices" href="#services"
                     class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12">
                     Υπηρεσίες
+                  </a>
+                </li>
+                <li class="group relative">
+                  <a id="menuContact" href="#contact"
+                    class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12">
+                    Επικοινωνία
                   </a>
                 </li>
               </ul>
@@ -1461,7 +1467,6 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
     getLanguage();
 
     function setLanguage(lang) {
-      // console.log(`setLanguage(${lang})`);
       localStorage.setItem('language', lang);
       getLanguage();
       setLangTexts();
@@ -1476,42 +1481,10 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
     }
 
     function setLangTexts() {
-      // $('#homeTitle').text(language.menu.homeTitle);
-      // $('#aboutTitle').text(language.menu.aboutTitle);
-      // $('#servicesTitle').text(language.menu.servicesTitle);
-      // $('#heroMainTitle').text(language.hero.mainTitle);
-      // $('#heroSubTitle').text(language.hero.subTitle);
-      // $('#aboutSubTitle').text(language.about.subTitle);
-      // $('#aboutMainTitle').text(language.about.mainTitle);
-      // $('#aboutMainContentText').text(language.about.mainContentText);
-      // $('#servicesMainTitle').text(language.services.mainTitle);
-      // $('#servicesSubTitle').text(language.services.subTitle);
-      // $('#servicesSlot1Title').text(language.services.slot1Title);
-      // $('#servicesSlot1Content').text(language.services.slot1Content);
-      // $('#servicesSlot2Title').text(language.services.slot2Title);
-      // $('#servicesSlot2Content').text(language.services.slot2Content);
-      // $('#servicesSlot3Title').text(language.services.slot3Title);
-      // $('#servicesSlot3Content').text(language.services.slot3Content);
-      // $('#servicesSlot4Title').text(language.services.slot4Title);
-      // $('#servicesSlot4Content').text(language.services.slot4Content);
-      // $('#faqSlot1Title').text(language.faq.slot1Title);
-      // $('#faqSlot1Content').text(language.faq.slot1Content);
-      // $('#faqSlot2Title').text(language.faq.slot2Title);
-      // $('#faqSlot2Content').text(language.faq.slot2Content);
-      // $('#faqSlot3Title').text(language.faq.slot3Title);
-      // $('#faqSlot3Content').text(language.faq.slot3Content);
-      // $('#faqSlot4Title').text(language.faq.slot4Title);
-      // $('#faqSlot4Content').text(language.faq.slot4Content);
-      // $('#contactTitle').text(language.contact.title);
-      // $('#contactLocationTitle').text(language.contact.locationTitle);
-      // $('#contactLocationContent').text(language.contact.locationContent);
-      // $('#contactEmailTitle').text(language.contact.emailTitle);
-      // $('#contactEmailContent').text(language.contact.emailContent);
-
-
-      findElementByIdAndReplaceText('homeTitle', language.menu.homeTitle);
-      findElementByIdAndReplaceText('aboutTitle', language.menu.aboutTitle);
-      findElementByIdAndReplaceText('servicesTitle', language.menu.servicesTitle);
+      findElementByIdAndReplaceText('menuHome', language.menu.homeTitle);
+      findElementByIdAndReplaceText('menuAbout', language.menu.aboutTitle);
+      findElementByIdAndReplaceText('menuServices', language.menu.servicesTitle);
+      findElementByIdAndReplaceText('menuContact', language.menu.contactTitle);
       findElementByIdAndReplaceText('heroMainTitle', language.hero.mainTitle);
       findElementByIdAndReplaceText('heroSubTitle', language.hero.subTitle);
       findElementByIdAndReplaceText('aboutSubTitle', language.about.subTitle);
@@ -1543,7 +1516,6 @@ c11.151,2.199,22.583,3.631,34.232,4.215c3.938,0.191,7.872,0.299,11.81,0.299C253.
     }
 
     (function () {
-      // console.log(language);
       setLangTexts();
     })();
 

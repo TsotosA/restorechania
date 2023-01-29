@@ -3,7 +3,8 @@
     "menu": {
         "homeTitle": "Αρχική",
         "aboutTitle": "Σχετικά",
-        "servicesTitle": "Υπηρεσίες"
+        "servicesTitle": "Υπηρεσίες",
+        "contactTitle": "Επικοινωνία"
     },
     "hero": {
         "mainTitle": "Maintain & Repair",

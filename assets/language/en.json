@@ -3,7 +3,8 @@
     "menu": {
         "homeTitle": "Home",
         "aboutTitle": "About",
-        "servicesTitle": "Services"
+        "servicesTitle": "Services",
+        "contactTitle": "Contact"
     },
     "hero": {
         "mainTitle": "Maintain & Repair",
