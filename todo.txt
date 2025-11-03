@@ -3,4 +3,4 @@
 - google analytics
 
 
-#git add . && git commit -m'.' && git push && git checkout master && git merge dev && git push
+#git add . && git commit -m'.' && git push && git checkout master && git merge dev && git push && git checkout dev
